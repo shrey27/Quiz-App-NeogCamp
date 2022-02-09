@@ -1,0 +1,14 @@
+@import '../../styles.css';
+
+.rules{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.rules__list {
+  color: var(--white);
+}
+.rules__list li {
+  margin: 1rem 0;
+}
