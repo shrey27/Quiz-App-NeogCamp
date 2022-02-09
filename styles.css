@@ -1,0 +1,10 @@
+:root{
+    --background: #1F2839;
+    --white--off: rgb(231, 219, 219);
+}
+
+body{
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}

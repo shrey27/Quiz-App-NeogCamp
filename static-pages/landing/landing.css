@@ -1,0 +1,42 @@
+@import '../../styles.css';
+
+.navbar {
+  background-color: var(--white);
+  border-bottom: var(--heading);
+  border-radius: 2rem 0 2rem 0;
+}
+.title,
+.subtitle {
+  color: var(--white--off);
+  margin: 1rem 0;
+}
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+.card {
+  border: none;
+  border-radius: 0;
+  width: 80%;
+  cursor: pointer;
+}
+.card--banner {
+  border-radius: 0;
+}
+.card--title {
+  margin: 0.5em 0.75em;
+}
+.card--content {
+  padding-bottom: 1em;
+  margin: 0 1em;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    height: 20rem;
+    width: auto;
+  }
+}
