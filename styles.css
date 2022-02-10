@@ -1,10 +1,65 @@
-:root{
-    --background: #1F2839;
-    --white--off: rgb(231, 219, 219);
+:root {
+  --background: #1f2839;
+  --white--off: rgb(231, 219, 219);
 }
 
-body{
-    background-color: var(--background);
-    margin: 0;
-    padding: 0;
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--white);
+  border-bottom: var(--heading);
+  border-radius: 2rem 0 2rem 0;
+}
+
+/* Card Styling */
+.title,
+.subtitle {
+  color: var(--white--off);
+  margin: 2rem 0;
+}
+.subtitle {
+  color: var(--code-span);
+}
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+.card {
+  border: none;
+  border-radius: 0;
+  width: 80%;
+  cursor: pointer;
+}
+.card--banner {
+  border-radius: 0;
+}
+.card--title {
+  margin: 0.5em 0.75em;
+}
+.card--content {
+  padding-bottom: 1em;
+  margin: 0 1em;
+}
+
+/* Landscape */
+.landscape {
+  width: min-content;
+  height: 4rem;
+}
+/* Media Query */
+@media screen and (min-width: 768px) {
+  .card {
+    height: 20rem;
+    width: auto;
+  }
 }

@@ -1,0 +1,14 @@
+@import '../../styles.css';
+
+.genre--btn {
+  margin: 0.5rem 6.5rem;
+}
+@media screen and (min-width: 768px) {
+  .genre {
+    width: max-content;
+    height: 30rem;
+  }
+  .genre .card--banner {
+    height: 50%;
+  }
+}
