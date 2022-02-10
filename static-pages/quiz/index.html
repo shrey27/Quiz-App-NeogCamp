@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://apolloui-neog.netlify.app/utility/common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="quiz__body sm-s">
+      <h1 class="title xl sb cen sm-s">INCEPTION</h1>
+      <div class="flex-ct-sb subheading">
+        <span class="score sm">Questions:1/5</span>
+        <span class="score sm">Score:0</span>
+      </div>
+      <div class="rules sm-s">
+        <ul class="stack">
+          <li class="question">
+            <h1 class="question--title md sb sm-s cen">Who is the director of Inception?</h1>
+            <input name="director" class="ipt--radio" type="radio" id="cn" />
+            <label class="ipt--label" for="cn">Christopher Nolan</label><br />
+
+            <input name="director" class="ipt--radio" type="radio" id="ss" />
+            <label class="ipt--label" for="ss">Steven Speilberg</label><br />
+
+            <input name="director" class="ipt--radio" type="radio" id="qt" />
+            <label class="ipt--label" for="qt">Quentin Tarantino</label>
+          </li>
+          <div class="nav--btn flex-ct-sb">
+            <i class="fa-solid fa-angles-left xl"></i>
+            <i class="fa-solid fa-angles-right xl fl-rt"></i>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
