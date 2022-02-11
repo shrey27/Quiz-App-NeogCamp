@@ -1,14 +1,9 @@
 @import '../../styles.css';
 
 .genre {
-  
+  width: 15rem;
+  height: 28rem;
 }
-@media screen and (min-width: 768px) {
-  .genre {
-    width: 25rem;
-    height: 35rem;
-  }
-  .genre .card--banner {
-    height: 50%;
-  }
+.genre .card--banner {
+  height: 40%;
 }
