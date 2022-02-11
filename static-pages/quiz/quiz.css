@@ -1,0 +1,42 @@
+@import '../../styles.css';
+
+.quiz__body {
+  width: 90%;
+  margin: auto;
+}
+.score,
+.question {
+  color: var(--white);
+}
+.question--title {
+  color: var(--badge-away);
+}
+.ipt--radio {
+  display: none;
+}
+.ipt--label {
+  display: inline-block;
+  margin: auto;
+  background-color: #4a5568;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.25em;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem auto;
+}
+.ipt--label:hover {
+  background-color: #373f4d;
+}
+.ipt--radio:checked + .ipt--label {
+  background-color: green;
+}
+.nav--btn {
+  color: var(--button-primary);
+  margin: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .quiz__body {
+    width: 40rem;
+  }
+}
