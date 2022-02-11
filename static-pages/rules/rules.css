@@ -1,0 +1,13 @@
+@import '../../styles.css';
+
+.rules {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.rules__list {
+  background-color: var(--white);
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
