@@ -31,6 +31,12 @@
 .ipt--radio:checked + .ipt--label {
   background-color: var(--badge-online);
 }
+.ipt--label.right--label {
+  background-color: var(--badge-online);
+}
+.ipt--label.wrong--label {
+  background-color: var(--badge-offline);;
+}
 .nav--btn {
   color: var(--button-primary);
   margin: 2rem 0;

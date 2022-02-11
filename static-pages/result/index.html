@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link
+      rel="stylesheet"
+      href="https://apolloui-neog.netlify.app/utility/common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="result.css" />
+  </head>
+  <body>
+    <div class="quiz__body sm-s">
+      <h1 class="title xl sb cen sm-s">RESULT</h1>
+      <h1 class="title md sb cen sm-s">INCEPTION</h1>
+      <div class="flex-ct-sb subheading">
+        <span class="score md">Questions:&nbsp3/3</span>
+        <span class="score md">Score:&nbsp2</span>
+      </div>
+      <div class="rules sm-s">
+        <ul>
+          <li class="stack">
+            <h1 class="question--title lg reg sm-s cen">
+              Who is the director of Inception?
+            </h1>
+            <ul class="stack">
+              <li class="question"></li>
+              <li class="question">
+                <input
+                  name="director"
+                  class="ipt--radio"
+                  type="radio"
+                  id="cn"
+                  checked
+                />
+                <label class="ipt--label" for="cn">Christopher Nolan</label
+                ><br />
+              </li>
+              <li class="question">
+                <input
+                  name="director"
+                  class="ipt--radio"
+                  type="radio"
+                  id="ss"
+                />
+                <label class="ipt--label" for="ss">Steven Speilberg</label
+                ><br />
+              </li>
+              <li class="question">
+                <input
+                  name="director"
+                  class="ipt--radio"
+                  type="radio"
+                  id="qt"
+                />
+                <label class="ipt--label" for="qt">Quentin Tarantino</label>
+              </li>
+            </ul>
+          </li>
+          <br /><br />
+          <li class="stack">
+            <h1 class="question--title lg reg sm-s cen">
+              Who is the protagonist of Inception?
+            </h1>
+            <ul class="stack">
+              <li class="question">
+                <input name="actor" class="ipt--radio" type="radio" id="tc" />
+                <label class="ipt--label" for="tc">Tom Cruise</label><br />
+              </li>
+              <li class="question">
+                <input name="actor" class="ipt--radio" type="radio" id="lh" />
+                <label class="ipt--label" for="lh">Liam Hemsworth</label><br />
+              </li>
+              <li class="question">
+                <input
+                  name="actor"
+                  class="ipt--radio"
+                  type="radio"
+                  id="ld"
+                  checked
+                />
+                <label class="ipt--label" for="ld">Lionardo Dicaprio</label>
+              </li>
+            </ul>
+          </li>
+          <li class="stack">
+            <h1 class="question--title lg reg sm-s cen">
+              Where was Inception primarily filmed?
+            </h1>
+            <ul class="stack">
+              <li class="question">
+                <input
+                  name="location"
+                  class="ipt--radio"
+                  type="radio"
+                  id="eu"
+                  checked
+                />
+                <label class="ipt--label right--label" for="eu">Europe</label
+                ><br />
+              </li>
+              <li class="question">
+                <input
+                  name="location"
+                  class="ipt--radio"
+                  type="radio"
+                  id="ss"
+                />
+                <label class="ipt--label" for="ss">Australia</label><br />
+              </li>
+              <li class="question">
+                <input
+                  name="location"
+                  class="ipt--radio"
+                  type="radio"
+                  id="qt"
+                />
+                <label class="ipt--label wrong--label" for="qt">USA</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="nav--btn flex-ct-sb">
+        <i
+          class="fa-solid fa-arrow-rotate-left btn btn--round btn--float btn--md"
+        ></i>
+        <i class="fa-solid fa-house btn btn--round btn--float btn--md"></i>
+      </div>
+    </div>
+  </body>
+</html>
