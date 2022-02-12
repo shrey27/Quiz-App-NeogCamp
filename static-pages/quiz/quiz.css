@@ -47,6 +47,9 @@
   border: none;
   border-radius: 0;
 }
+.modal--content[wide='10'] {
+  width: auto;
+}
 .modal--title {
   color: var(--white--off);
 }
