@@ -1,0 +1,8 @@
+@import '../../styles.css';
+
+.card {
+  max-width: none;
+  max-height: none;
+  width: max-content;
+  margin: 2rem auto;
+}

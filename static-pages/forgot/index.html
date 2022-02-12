@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Forgot password</title>
     <link
       rel="stylesheet"
       href="https://apolloui-neog.netlify.app/utility/common.css"
@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="forgot.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -46,24 +46,22 @@
 
     <main>
       <div class="app--login shdw">
-        <h1 class="md sb cen">LOGIN</h1>
-        <br />
+        <h1 class="md sb cen sm-s">RESET PASSWORD</h1>
         <hr />
         <br />
-        <form action="https://www.google.com">
-          <label for="user-name" class="lbl">
-            Username*<input
-              type="text"
-              placeholder="Enter Username"
+        <form action="../login/">
+          <label for="pswd" class="lbl">
+            Current Password*<input
+              type="password"
+              placeholder="Enter Password"
               class="ipt ipt--man"
-              id="user-name"
-              name="user-name"
-              required
+              id="pswd"
+              name="password"
               autocomplete="off"
+              required
             />
-            <span class="ipt--error">This field is mandatory</span>
           </label>
-          <br /><br />
+          <span class="ipt--error">This field is mandatory</span><br /><br />
           <label for="pswd" class="lbl">
             Password*<input
               type="password"
@@ -75,32 +73,24 @@
               required
             />
           </label>
-          <span class="ipt--error">This field is mandatory</span>
-          <br /><br />
-          <label for="remember"
-            ><input
-              class="login__ip"
-              type="checkbox"
-              name="remember"
-              id="remember"
-            />&nbsp&nbspRemember Me</label
-          >
-          <br /><br />
-          <button type="submit" class="btn btn--wide btn--float">Log In</button>
+          <span class="ipt--error">This field is mandatory</span><br /><br />
+          <label for="pswd" class="lbl">
+            Confirm Password*<input
+              type="password"
+              placeholder="Enter Password"
+              class="ipt ipt--man"
+              id="pswd"
+              name="password"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <span class="ipt--error">This field is mandatory</span><br /><br />
+          <button type="submit" class="btn btn--wide btn--float">
+            Set Password
+          </button>
         </form>
-        <br />
-        <a href="" class="forgot sm">Forgot Password?</a>
       </div>
-
-      <div class="app--login shdw">
-        <h1 class="md sb cen sm-s">FORGOT PASSWORD</h1>
-        <hr />
-        <p class="heading sm sb sm-s">
-          A temporary password has been sent to your email. Please enter that password in
-          the current password field on <a href="../forgot/" class="forgot">this&nbsp;</a>page.
-        </p>
-      </div>
-
     </main>
   </body>
 </html>

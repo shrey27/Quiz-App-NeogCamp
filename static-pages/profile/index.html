@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rules</title>
+    <title>Profile</title>
     <link
       rel="stylesheet"
       href="https://apolloui-neog.netlify.app/utility/common.css"
@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="rules.css" />
+    <link rel="stylesheet" href="profile.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -28,16 +28,29 @@
           <span class="md sb n-s">QuizEasy</span>
         </span>
       </section>
+      <section class="middle cen sm-s">
+        <div class="search--ctr">
+          <i class="fas fa-search search--btn"></i>
+          <input
+            type="text"
+            placeholder="Search"
+            class="ipt no--bdr"
+            id="user-name"
+            name="user-name"
+            autocomplete="off"
+          />
+        </div>
+      </section>
       <section class="end sm-s">
         <div class="menu">
           <span class="menu__btn md sb heading">
             <i class="far fa-user-circle"></i>&nbsp<span class="menu__btn__name"
-              >Hello User</span
+              >Hello, User</span
             >
           </span>
           <div class="submenu shadow xs-s">
             <section class="submenu__items flex-st-ct flex-vertical">
-              <span class="submenu__item">Update Profile</span>
+              <span class="submenu__item">USER Profile</span>
               <span class="submenu__item">Score Board</span>
               <span class="submenu__item">Change Password</span>
             </section>
@@ -56,44 +69,14 @@
       </section>
     </nav>
 
-    <h1 class="title xl sb cen">Rules of the quiz</h1>
-    <div class="rules">
-      <ul class="stack xs-s">
-        <li class="flex-ct-st shadow xs-s rules__list">
-          <span class="sm sb"
-            ><i class="fa-solid fa-circle-chevron-right"></i> You cannot open
-            another tab while attempting the quiz</span
-          >
-        </li>
-        <li class="flex-ct-st shadow xs-s rules__list">
-          <span class="sm sb"
-            ><i class="fa-solid fa-circle-chevron-right"></i> Attempt all the
-            sections for cumulative score</span
-          >
-        </li>
-        <li class="flex-ct-st shadow xs-s rules__list">
-          <span class="sm sb"
-            ><i class="fa-solid fa-circle-chevron-right"></i> You cannot attempt
-            the quiz once it is submitted</span
-          >
-        </li>
-        <li class="flex-ct-st shadow xs-s rules__list">
-          <span class="sm sb"
-            ><i class="fa-solid fa-circle-chevron-right"></i> You cannot open
-            another tab while attempting the quiz</span
-          >
-        </li>
-        <li class="flex-ct-st shadow xs-s rules__list">
-          <span class="sm sb"
-            ><i class="fa-solid fa-circle-chevron-right"></i> You cannot attempt
-            another quiz before submitting the last quiz</span
-          >
-        </li>
-      </ul>
-      <div class="flex-ct-ct">
-        <a href="/" class="btn btn--success btn--md sb">Start quiz</a>
-        <a href="/" class="btn btn--error btn--md sb">Go Back</a>
+    <main>
+      <div class="card">
+        <h1 class="heading md sb sm-s">UPDATE PROFILE</h1>
+        <hr />
+        <form action="../homepage/">
+          
+        </form>
       </div>
-    </div>
+    </main>
   </body>
 </html>
