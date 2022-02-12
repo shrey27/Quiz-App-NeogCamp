@@ -1,8 +1,36 @@
 @import '../../styles.css';
 
-.card {
-  max-width: 15rem;
+.landing {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
-.card .card--banner {
-  height: 50%;
+.landing__bnr {
+  width: 90%;
+  height: 40%;
+}
+.landing__cnt {
+  width: 90%;
+  height: 40%;
+}
+.btn--flex {
+  font-size: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .landing {
+    flex-direction: row-reverse;
+  }
+  .landing__bnr {
+    width: 50%;
+  }
+  .landing__cnt {
+    width: 50%;
+  }
+  .btn--flex {
+    font-size: 24px;
+  }
 }

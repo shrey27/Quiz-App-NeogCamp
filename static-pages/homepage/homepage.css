@@ -1,0 +1,8 @@
+@import '../../styles.css';
+
+.card {
+  max-width: 15rem;
+}
+.card .card--banner {
+  height: 50%;
+}
