@@ -40,3 +40,27 @@
     width: 40rem;
   }
 }
+
+/* Modal */
+.modal--content {
+  background-color: var(--background);
+  border: none;
+  border-radius: 0;
+}
+.modal--content[wide='10'] {
+  width: auto;
+}
+.modal--title {
+  color: var(--white--off);
+}
+.btn--yes {
+  background-color: var(--badge-online);
+}
+.btn--no {
+  background-color: var(--badge-offline);
+  color: var(--white);
+  border: none;
+}
+.no:hover {
+  border: none;
+}
