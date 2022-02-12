@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Profile</title>
     <link
       rel="stylesheet"
       href="https://apolloui-neog.netlify.app/utility/common.css"
@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="profile.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -45,12 +45,12 @@
         <div class="menu">
           <span class="menu__btn md sb heading">
             <i class="far fa-user-circle"></i>&nbsp<span class="menu__btn__name"
-              >Hello User</span
+              >Hello, Carl</span
             >
           </span>
           <div class="submenu shadow xs-s">
             <section class="submenu__items flex-st-ct flex-vertical">
-              <span class="submenu__item">Update Profile</span>
+              <span class="submenu__item">USER Profile</span>
               <span class="submenu__item">Score Board</span>
               <span class="submenu__item">Change Password</span>
             </section>
@@ -69,61 +69,67 @@
       </section>
     </nav>
 
-    <h1 class="subtitle lg sb cen sm-s">CHOOSE A CATEGORY</h1>
-    <div class="category">
-      <div class="card">
-        <img
-          src="https://images2.minutemediacdn.com/image/upload/c_crop,h_717,w_1276,x_0,y_291/v1617807217/shape/mentalfloss/645243-uncommongoods-tim-aurelia-sanders-movie-critic-imdb-poster-details.png?itok=Qc8dJkLc"
-          alt="Banner"
-          class="card--banner"
-        />
-        <section class="content">
-          <h1 class="card--title">Movies</h1>
-          <p class="card--content">
-            A collection of quiz based on highly acclaimed movies of all time.
-          </p>
-        </section>
+    <main>
+      <div class="card sm-s">
+        <h1 class="heading md sb sm-s">UPDATE PROFILE</h1>
+        <hr />
+        <form action="../homepage/" class="sm-s">
+          <div class="fields">
+            <label for="name--field" class="lbl">Name:</label>
+            <input
+              class="ipt sm-s"
+              type="text"
+              name="name"
+              id="name--field"
+              pattern="+[A-Za-z]"
+              title="Name should only contain one or more alphabets"
+              autocomplete="off"
+              value="Carl Jones"
+            />
+          </div>
+          <div class="fields">
+            <label for="email--field" class="lbl">Email:</label>
+            <input
+              class="ipt sm-s"
+              type="email"
+              name="email"
+              id="email--field"
+              title="Enter a valid Email ID"
+              autocomplete="email"
+              value="carljones2345@gmail.com"
+            />
+          </div>
+          <div class="fields">
+            <label for="phone--field" class="lbl">Phone:</label>
+            <input
+              class="ipt sm-s"
+              type="number"
+              min="1000000000"
+              max="9999999999"
+              name="phone"
+              id="phone--field"
+              pattern="[0-9]"
+              title="Enter a valid 10 digits mobile number"
+              autocomplete="mobile"
+              value="9999999909"
+            />
+          </div>
+          <div class="fields">
+            <label for="dob--field" class="lbl">Date of Birth:</label>
+            <input
+              class="ipt sm-s"
+              type="date"
+              name="dob"
+              id="dob--field"
+              autocomplete="off"
+              value="1980-08-26"
+            />
+          </div>
+          <button type="submit" class="btn btn--wide btn--float sm-s">
+            UPDATE
+          </button>
+        </form>
       </div>
-      <div class="card">
-        <img
-          src="https://blog.ezeonsoft.com/wp-content/uploads/2020/12/dce16bb609d832b10a2ba4daf2c6cc0b1.jpg"
-          alt="Banner"
-          class="card--banner"
-        />
-        <section class="content">
-          <h1 class="card--title">Web Series</h1>
-          <p class="card--content">
-            A collection of quiz based on mind-boggling shows of last decade.
-          </p>
-        </section>
-      </div>
-      <div class="card">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSPCSoCyv3EUZgM8jNNpo51gjwfEA9cNoF-w-m2ouqzFZRnPBDX5hxvJVVBr438xFEl3Y&usqp=CAU"
-          alt="Banner"
-          class="card--banner"
-        />
-        <section class="content">
-          <h1 class="card--title">Books</h1>
-          <p class="card--content">
-            A collection of quiz based on the greatest books of all time.
-          </p>
-        </section>
-      </div>
-      <div class="card">
-        <img
-          src="https://rukminim1.flixcart.com/image/416/416/kb5eikw0/poster/v/p/k/large-music-posters-for-room-set-of-6-best-music-posters-vintage-original-imafskknrpzzfcpq.jpeg?q=70"
-          alt="Banner"
-          class="card--banner"
-        />
-        <section class="content">
-          <h1 class="card--title">Music</h1>
-          <p class="card--content">
-            A collection of quiz based on top songs, music-composers, song
-            writers and lyricists of last decade.
-          </p>
-        </section>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
