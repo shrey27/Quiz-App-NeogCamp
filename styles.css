@@ -16,6 +16,40 @@ body {
   border-bottom: var(--heading);
   border-radius: 2rem 0 2rem 0;
 }
+.search--ctr {
+  width: 90%;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  right: 0rem;
+  z-index: 110;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  transition: display 500ms;
+}
+.submenu__btn {
+  display: flex;
+}
+.submenu__item {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: start;
+  color: var(--heading);
+}
+.submenu__item:hover {
+  background-color: var(--button-light);
+}
+.menu__btn:hover ~ .submenu {
+  display: inline-block;
+}
+.submenu:hover {
+  display: inline-block;
+}
 
 /* Card Styling */
 .title,
