@@ -70,11 +70,60 @@
     </nav>
 
     <main>
-      <div class="card">
+      <div class="card sm-s">
         <h1 class="heading md sb sm-s">UPDATE PROFILE</h1>
         <hr />
-        <form action="../homepage/">
-          
+        <form action="../homepage/" class="sm-s">
+          <div class="fields">
+            <label for="name--field" class="lbl">Name:</label>
+            <input
+              class="ipt sm-s"
+              type="text"
+              name="name"
+              id="name--field"
+              pattern="+[A-Za-z]"
+              title="Name should only contain one or more alphabets"
+              autocomplete="off"
+            />
+          </div>
+          <div class="fields">
+            <label for="email--field" class="lbl">Email:</label>
+            <input
+              class="ipt sm-s"
+              type="email"
+              name="email"
+              id="email--field"
+              title="Enter a valid Email ID"
+              autocomplete="email"
+            />
+          </div>
+          <div class="fields">
+            <label for="phone--field" class="lbl">Phone:</label>
+            <input
+              class="ipt sm-s"
+              type="number"
+              min="1000000000"
+              max="9999999999"
+              name="phone"
+              id="phone--field"
+              pattern="[0-9]"
+              title="Enter a valid 10 digits mobile number"
+              autocomplete="mobile"
+            />
+          </div>
+          <div class="fields">
+            <label for="dob--field" class="lbl">Date of Birth:</label>
+            <input
+              class="ipt sm-s"
+              type="date"
+              name="dob"
+              id="dob--field"
+              autocomplete="off"
+            />
+          </div>
+          <button type="submit" class="btn btn--wide btn--float sm-s">
+            UPDATE
+          </button>
         </form>
       </div>
     </main>

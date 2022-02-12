@@ -85,6 +85,8 @@
               id="pswd"
               name="password"
               autocomplete="off"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
               required
             />
           </label>
@@ -98,12 +100,16 @@
               id="pswd-cnf"
               name="password-cnf"
               autocomplete="off"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
               required
             />
           </label>
           <span class="ipt--error show--error">This field is mandatory</span>
           <br /><br />
-          <button type="submit" class="btn btn--wide btn--float">Sign up</button>
+          <button type="submit" class="btn btn--wide btn--float">
+            Sign up
+          </button>
         </form>
         <br />
         <a href="" class="already sm">Already have an account?</a>

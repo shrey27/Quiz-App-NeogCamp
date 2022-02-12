@@ -72,6 +72,8 @@
               id="pswd"
               name="password"
               autocomplete="off"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
               required
             />
           </label>
@@ -96,11 +98,11 @@
         <h1 class="md sb cen sm-s">FORGOT PASSWORD</h1>
         <hr />
         <p class="heading sm sb sm-s">
-          A temporary password has been sent to your email. Please enter that password in
-          the current password field on <a href="../forgot/" class="forgot">this&nbsp;</a>page.
+          A temporary password has been sent to your email. Please enter that
+          password in the current password field on
+          <a href="../forgot/" class="forgot">this&nbsp;</a>page.
         </p>
       </div>
-
     </main>
   </body>
 </html>
