@@ -53,7 +53,9 @@ body {
 .submenu:hover {
   display: inline-block;
 }
-
+.menu__btn__name {
+  display: none;
+}
 /* Card Styling */
 .title,
 .subtitle {
@@ -87,16 +89,18 @@ body {
   padding-bottom: 1em;
   margin: 0 1em;
 }
-
-/* Landscape */
-.landscape {
-  width: min-content;
-  height: 4rem;
+/* common */
+.forgot {
+  color: var(--button-float);
 }
+
 /* Media Query */
 @media screen and (min-width: 768px) {
   .card {
     height: 20rem;
     width: auto;
+  }
+  .menu__btn__name {
+    display: inline;
   }
 }

@@ -1,0 +1,50 @@
+@import '../../styles.css';
+
+.score--card {
+  max-width: none;
+  max-height: none;
+  margin: 2rem auto;
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+.score--banner {
+  width: 20%;
+  height: 20%;
+}
+.score--content {
+  vertical-align: center;
+}
+.alert {
+  margin: 1rem 0 0.5rem 0;
+  text-align: left;
+  border-radius: 0;
+}
+.submenu__name {
+  margin: 0;
+}
+
+/* Genre cards */
+.genre {
+  width: 15rem;
+  height: 28rem;
+  background-color: var(--white-off);
+}
+.genre .card--banner {
+  height: 40%;
+}
+
+/* Attempted */
+.attempted--title {
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .score--card,
+  .attempted--title {
+    width: 50%;
+  }
+}
