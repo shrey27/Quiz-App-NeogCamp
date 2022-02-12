@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link
+      rel="stylesheet"
+      href="https://apolloui-neog.netlify.app/utility/common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <section class="start">
+        <a href="../../index.html">
+          <img class="box__image" src="../../assets/quizeasy_logo.svg" />
+        </a>
+        <span class="box-span">
+          <span class="md sb n-s heading">QuizEASY</span>
+        </span>
+      </section>
+      <section class="end flex-ct-ed">
+        <a href="https://twitter.com/home">
+          <img
+            class="box__image__sm"
+            src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+          />
+        </a>
+        <a href="https://github.com/shrey27">
+          <img
+            class="box__image__sm"
+            src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+          />
+        </a>
+      </section>
+    </nav>
+
+    <main>
+      <div class="app--login shdw">
+        <h1 class="md sb cen">SIGN UP</h1>
+        <br />
+        <hr />
+        <br />
+        <form action="https://www.google.com">
+          <label for="user-name" class="lbl">
+            Username*<input
+              type="text"
+              placeholder="Enter Username"
+              class="ipt ipt--man"
+              id="user-name"
+              name="user-name"
+              required
+              autocomplete="off"
+            />
+            <span class="ipt--error">This field is mandatory</span>
+          </label>
+          <br /><br />
+          <label for="email" class="lbl">
+            Email Id*<input
+              type="email"
+              placeholder="Enter Email Id"
+              class="ipt ipt--man"
+              id="email"
+              name="email"
+              required
+              autocomplete="off"
+            />
+            <span class="ipt--error">This field is mandatory</span>
+          </label>
+          <br /><br />
+          <label for="pswd" class="lbl">
+            Password*<input
+              type="password"
+              placeholder="Enter Password"
+              class="ipt ipt--man"
+              id="pswd"
+              name="password"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <span class="ipt--error">This field is mandatory</span>
+          <br /><br />
+          <label for="pswd-cnf" class="lbl">
+            Confirm Password*<input
+              type="password"
+              placeholder="Enter Password Again"
+              class="ipt ipt--man"
+              id="pswd-cnf"
+              name="password-cnf"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <span class="ipt--error show--error">This field is mandatory</span>
+          <br /><br />
+          <button type="submit" class="btn btn--wide btn--float">Sign up</button>
+        </form>
+        <br />
+        <a href="" class="already sm">Already have an account?</a>
+      </div>
+    </main>
+  </body>
+</html>
