@@ -17,7 +17,6 @@ body {
 .navbar {
   background-color: var(--white);
   border-bottom: var(--heading);
-  border-radius: 2rem 0 2rem 0;
 }
 .search--ctr {
   width: 90%;
@@ -79,13 +78,13 @@ body {
   width: 80%;
   cursor: pointer;
 }
-.card--banner {
+.card__banner {
   border-radius: 0;
 }
-.card--title {
+.card__title {
   margin: 0.5em 0.75em;
 }
-.card--content {
+.card__content {
   padding-bottom: 1em;
   margin: 0 1em;
 }
@@ -102,5 +101,8 @@ body {
   }
   .menu__btn__name {
     display: inline;
+  }
+  .navbar {
+    border-radius: 2rem 0 2rem 0;
   }
 }

@@ -33,7 +33,7 @@
   height: 28rem;
   background-color: var(--white-off);
 }
-.genre .card--banner {
+.genre .card__banner {
   height: 40%;
 }
 

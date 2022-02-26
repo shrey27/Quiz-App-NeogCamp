@@ -3,6 +3,6 @@
 .card {
   max-width: 15rem;
 }
-.card .card--banner {
+.card .card__banner {
   height: 50%;
 }

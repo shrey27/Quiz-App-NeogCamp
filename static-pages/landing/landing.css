@@ -10,8 +10,8 @@
   gap: 3rem;
 }
 .landing__bnr {
-  width: 90%;
-  height: 40%;
+  width: 60%;
+  height: 30%;
 }
 .landing__cnt {
   width: 90%;
@@ -25,7 +25,7 @@
     flex-direction: row-reverse;
   }
   .landing__bnr {
-    width: 50%;
+    width: 40%;
   }
   .landing__cnt {
     width: 50%;

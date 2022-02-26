@@ -11,10 +11,10 @@
 .question--title {
   color: var(--badge-away);
 }
-.ipt--radio {
+.input__radio {
   display: none;
 }
-.ipt--label {
+.input__label {
   display: inline-block;
   margin: auto;
   background-color: #4a5568;
@@ -25,17 +25,17 @@
   text-align: center;
   margin: 1rem auto;
 }
-.ipt--label:hover {
+.input__label:hover {
   background-color: #373f4d;
 }
-.ipt--radio:checked + .ipt--label {
+.input__radio:checked + .input__label {
   background-color: var(--badge-online);
 }
-.ipt--label.right--label {
+.input__label.right__label {
   background-color: var(--badge-online);
 }
-.ipt--label.wrong--label {
-  background-color: var(--badge-offline);;
+.input__label.wrong__label {
+  background-color: var(--badge-offline);
 }
 .nav--btn {
   color: var(--button-primary);
